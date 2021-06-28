@@ -1,0 +1,22 @@
+//THE CODE WILL BE IN JAVA(8) 
+// PRINT A RANGE OF EVEN NUMBERS IN REVERSE ORDER USING WHILE LOOP
+import java.util.scanner;
+class EvenInReverse
+{
+ public static void main(String args[])
+ {
+   int n,m;
+   Scanner s= new Scanner(System.in);
+   System.out.println("Give a range for the numbers in this format-- smaller no.--bigger no.");
+   n=s.nextInt();
+   m=s.nextInt();
+  if(n<m)
+    { 
+     while(m!=n)
+    {
+     if(m%2==0)
+     System.out.print(m+" ");
+     m--;
+    }
+   }
+}}
