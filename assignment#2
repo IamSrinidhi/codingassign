@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class EvenOrOdd
+{
+  public static void main(String args[])
+  {
+    int a,n,o=0,e=0;
+    Scanner blah=new Scanner(System.in);
+    System.out.println("enter any number (with no. of digits b/w -2^31 and 2^31)");
+    n=blah.nextInt();
+    while(n!=0)
+    {
+       a=n%10;
+       if(a%2==0)
+       e++;
+       else
+       o++;
+       n=n/10;
+    }
+    System.out.println("odd digits---"+o);
+    System.out.println("even digits---"+e);
+  }
+}
