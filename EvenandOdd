@@ -1,0 +1,26 @@
+/*Write a program to read a number, n and print the following output:(i.e., all even numbers & all odd numbers)
+Input:   n=12345
+Output: 24     135*/
+class EvenandOdd
+{
+  public static void main(String args[])
+  {
+    int even_count=1,odd_count=1;
+    int even=0,odd=0;
+    while(n!=0)
+    {
+      r=n%10;
+      n=n/10;
+      if(r%2==0)
+      {
+        even=r*even_count+even;
+        even_count=even_count*10;
+      }
+      else
+      {
+       odd=r*odd_count+odd;
+       odd_count=odd_count*10;
+      }
+    }System.out.println(even+" "+odd);
+  }
+}  
