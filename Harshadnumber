@@ -1,0 +1,20 @@
+import java.util.*;
+class Harshed
+{
+ public static void main(String args[])
+ {
+    int n, sum=0,r,temp;
+    Scanner sc = new Scanner(System.in);
+    temp=n=sc.nextInt();
+    while(n>0)
+    {
+      r=n%10;
+      sum=sum+r;
+      n=n/10;
+    }
+    if(temp%sum==0)
+    System.out.println("harshed number");
+    else
+    System.out.println("not harshed number");
+ }
+}
