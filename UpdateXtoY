@@ -1,0 +1,25 @@
+import java.util.*;
+class UpdateXtoY
+{
+public static void main(String args[])
+{
+   Scanner sc=new Scanner(System.in);
+   int n,x,y,a,c=1,i=0;
+   System.out.println("Give any number");
+   n=sc.nextInt();
+   System.out.println("Give a no. which needs to be replaced");
+   x=sc.nextInt();
+   System.out.println("Give a no. to replace the digit x");
+   y=sc.nextInt();
+   while(n!=0)
+   {
+     a=n%10;
+     if(a==x)
+     i=i+y*c;
+     else
+     i=i+a*c;
+     c=c*10;
+     n=n/10;
+   }System.out.println(i);
+}
+}
