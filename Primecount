@@ -1,0 +1,21 @@
+import java.util.*;
+class PrimeCount
+{
+ public static void main(String args[])
+ {
+  int a,b,num,count=1;
+  Scanner q=new Scanner(System.in);
+  System.out.println("enter a range");
+  a=q.nextInt();
+  b=q.nextInt();
+  for(int i=2;i<=Math.sqrt(b);i++)
+  {   num=a;
+     if(a%i!=0)
+     {
+         count++;
+      }     
+
+   }
+    System.out.println(count);
+   } 
+ }
