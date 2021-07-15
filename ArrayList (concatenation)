@@ -11,10 +11,12 @@ class Concat
       System.out.println("Enter two sets of strings with upto 3 elements each");
      for(i=0;i<=3;i++) 
     { s1=sc.nextLine();
-     a1.add(s1);}
+     a1.add(s1);
+     }
      for(i=0;i<=3;i++) 
      { s2=sc.nextLine();
-      a2.add(s2);} 
+      a2.add(s2);
+      } 
       a1.addAll(a2);
       Collections.sort(a1);
      System.out.println("Concatenated strings"+a1);
