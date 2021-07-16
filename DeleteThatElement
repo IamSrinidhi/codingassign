@@ -1,0 +1,27 @@
+import java.util.*;
+class DeleteThatElement
+{
+  public static void main(String args[])
+  {
+    ArrayList <Integer> a=new  ArrayList <Integer>();
+    Scanner s = new Scanner(System.in);
+    int n,num;
+    System.out.print("Enter size of ArrayList");
+    n=s.nextInt();
+    System.out.print("Enter elements");
+    for(int i=0;i<n;++i)
+    a.add(s.nextInt());
+    System.out.print("Enter the number you wanted to delete");
+    num=s.nextInt();
+    if(a.contains(num))
+   {
+     int del = a.indexOf(num);
+     a.remove(del);
+    for(int j:a)
+    System.out.print(j+" ");
+    }
+  else  
+  System.out.print("element not found");
+    
+  }
+}
