@@ -1,0 +1,50 @@
+import java.util.*;
+class MenuOfMethods
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x=new LinkedList<Integer>();
+int n,ch,p,len;
+System.out.println("Enter length of linkedlist");
+len=sc.nextInt();
+ System.out.println("Enter linkedlist value");
+for(int i=0;i<len;++i)
+{
+   x.add(sc.nextInt());
+}
+System.out.print("1.BeginInsert \n2.EndInsert\n 3.Position insert\n");
+System.out.print("4.beginning delete\n5.End delete\n6.Position delete\n 7.Display\n8.exit\n \tEnter your Choice:");
+ch=sc.nextInt();
+switch(ch)
+{
+case 1: System.out.println("Enter n value");
+n=sc.nextInt();
+x.addFirst(n);System.out.println("Updated :"+x);
+break;
+case 2: System.out.println("Enter n value");
+n=sc.nextInt();
+x.addLast(n);System.out.println("Updated :"+x);
+break;
+case 3: System.out.println("Enter a  position and value to delete");
+p=sc.nextInt();
+n=sc.nextInt(); System.out.println("Updated :"+x);
+x.set(p,n);
+break;
+case 4: System.out.println("Deleting first element");
+n=sc.nextInt();
+x.removeFirst();System.out.println("Updated :"+x);
+break;
+case 5:System.out.println("Deleting the last element");
+n=sc.nextInt();
+x.removeLast(); System.out.println("Updated :"+x);
+break;
+case 6:System.out.println("Enter a  position to delete its value ");
+p=sc.nextInt();
+x.remove(p); System.out.println("Updated :"+x);
+break;
+case 7: System.out.println(x);
+default: System.out.println("Invalid Choice");
+}
+}
+}
