@@ -1,0 +1,23 @@
+import java.util.*;
+class HashStore
+{
+public static void main(String args[])
+{ 
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+int key,n;
+String value;
+Scanner sc=new Scanner(System.in);
+ System.out.println("Enter the size");
+n=sc.nextInt();
+System.out.println("Enter the elements");
+for(int i=0;i<n;i++)
+{
+   key=sc.nextInt(); value=sc.next();
+  x.put(key,value);
+}
+for(Map.Entry<Integer,String> i: x.entrySet())
+ {
+   System.out.println(i.getKey()+"  "+i.getValue()+" ");
+ }
+}
+}
